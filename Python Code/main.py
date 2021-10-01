@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 import cv2
@@ -20,7 +20,7 @@ if not firebase_admin._apps:
       "project_id": "traffic-159e8",
       "private_key_id": "",
       "private_key": "",
-      "client_email": "firebase-adminsdk-1avzl@traffic-159e8.iam.gserviceaccount.com",
+      "client_email": "",
       "client_id": "112202752645265219203",
       "auth_uri": "https://accounts.google.com/o/oauth2/auth",
       "token_uri": "https://oauth2.googleapis.com/token",
@@ -34,10 +34,10 @@ if not firebase_admin._apps:
 
 ref = db.reference('server/')
 #video location
-cap1 = cv2.VideoCapture(r"C:\Users\Monish Meher\Desktop\TestFootage\first_half.mp4")
+cap1 = cv2.VideoCapture(r"C:\Users\Monish Meher\Downloads\Video\road.mp4")
 length1 = int(cap1.get(cv2.CAP_PROP_FRAME_COUNT))
 print( length1 )
-cap2 = cv2.VideoCapture(r"C:\Users\Monish Meher\Desktop\TestFootage\third_half.mp4")
+cap2 = cv2.VideoCapture(r"C:\Users\Monish Meher\Downloads\Video\test.mp4")
 length2 = int(cap2.get(cv2.CAP_PROP_FRAME_COUNT))
 print( length2 )
 
@@ -139,7 +139,7 @@ def compare():
         })
         main()
     elif carInFeed1 == carInFeed2:
-        print("Similar Traffic")
+        print("Similar Trafiic")
 #         current = "B"
 #         firebase.post('/current',current)
         traffic_ref = ref.child('traffic-data')
@@ -155,6 +155,12 @@ def compare():
 main()        
 
     
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
