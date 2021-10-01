@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "827245170187",
+    "firebase_url": "https://traffic-159e8-default-rtdb.firebaseio.com",
+    "project_id": "traffic-159e8",
+    "storage_bucket": "traffic-159e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827245170187:android:2bf2bc4e33c0a1b86c810e",
+        "android_client_info": {
+          "package_name": "com.catalystmedia.traffic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827245170187-id04no938tnqf9s6en53cgj1l8nuatqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmSMRoWRNppNx1ykn_kc_wVO9AxVMIReQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827245170187-id04no938tnqf9s6en53cgj1l8nuatqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
