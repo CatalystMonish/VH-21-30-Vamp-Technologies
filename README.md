@@ -1,7 +1,7 @@
 # [Route](https://github.com/CatalystMonish/VH-21-30-Vamp-Technologies)
 ## VH-21-30: Vamp Technologies
 
-![Python](https://img.shields.io/badge/language-python-yellow) ![Kotlin](https://img.shields.io/badge/Language-Kotlin-orange.svg) ![Android Studio](https://img.shields.io/badge/IDE-AndroidStudio-brightgreen.svg) ![Sublime Text](https://img.shields.io/badge/IDE-Sublime%20Text-blue) ![PRs Welcome](https://img.shields.io/badge/PullRequests-welcome-pink.svg)
+![Python](https://img.shields.io/badge/Language-Python-yellow) ![Kotlin](https://img.shields.io/badge/Language-Kotlin-orange.svg) ![Android Studio](https://img.shields.io/badge/IDE-AndroidStudio-brightgreen.svg) ![Sublime Text](https://img.shields.io/badge/IDE-Sublime%20Text-blue) ![PRs Welcome](https://img.shields.io/badge/PullRequests-welcome-pink.svg)
 
 :loudspeaker: This app was created as a part of our project for VCET Hackathon 2021!
 
