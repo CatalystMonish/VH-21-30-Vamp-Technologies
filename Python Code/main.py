@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import cv2
@@ -18,8 +18,8 @@ if not firebase_admin._apps:
     cred_object = credentials.Certificate({
       "type": "service_account",
       "project_id": "traffic-159e8",
-      "private_key_id": "089dd0b62a42c639e8b7f950be593aa70e13da2e",
-      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC3PA04b5xjejHt\n3a8BFpjxGk8NcAp4S77MxgEqmEbzc8YVUvyun0Wf7eOAftuG7eHmGQMbysmhXtMc\nNV6N+34OjZwNIHTO3ooa7tQNYavpZzkoAnlCBgdkIDQ1g/Tsmq6xLmTWIZ8XHbUr\n4YQ6WvLTMFoIwWeuOurv4BB/uSGetGXN53sDQfWaIrdw0MSfq01BmgYtUS2Dto1c\njz36oIWmhBeQ3qMIm46F2Q5F32qMtJEmkgcdzWEVPj48wo/v2nFp7ZGxKzim+5+D\n1RETOoCzbAbw0anyCB005o/GCUt4ARdN25cQMbch9J5EE+wQY4Bff7B5JEGnYg9t\niHnC/5U3AgMBAAECggEAUzw1uzXEIlIvXSDPLxzfQ+LSF0YWk3fBCA9IF1vOGygz\nypsEiqRyQciUCFpYCa6E5/vjtBvFxQaouo8p0TB1nlHImhPsy84+iSaFcEC2kZOg\n3KJnB81qTRrt7INxXouToIv1JWpndN47XuAWK1YGKVY1B/YnTXeZInczt3lXItqD\nrlPLzgplRCL5qr7fEtOzRp4H0xPduYPyfuohzKQgSe8lP8F9gdKkpG6WqotLLnFl\nse6bPzZl2SRDr3zwdTTDDhZbW91+Y4am9ZQ2mqablYGvZvDv+E+X87eAB7D1EsJe\nu4JhjXUZWam4CD+kZJeBbkqOvLIMoxzCRsHVvlplvQKBgQD8hdrJtqLd1+IzQo4s\neGkMikFpQC/tKYk3diOJlpBjwsAOPfEpDUVZxZzV/1M3qH4Zf+C3Qgl6puA53sxK\nA9qE+OVoEyVfuHLeGdorGa0mNistmLPDbGYbVJsATCFWSWx8o6cfX26UPr1lQuyv\nnOKqSj9+QOIvuU5gTl5Yv2EJcwKBgQC5wfSE8ktrt0tvQdTWNzznPEBfYai/1c4b\n3I1Yy4c5+JSbPkHymVGD+m2CVZZ9cICbl7Xa4/nkuU6+AcP4AQgADrKLwdBKN2PO\nJJrvVyW9nnB1c5RXVxxvW4DzQ1Pdo9fDaa41gSSx5a/3Kmfxek9ycUdTGKdj/FSw\npvlIG8BkLQKBgEDiB7hCdBB6MsWm+S7V9W/iajIn6uiN/pLAiRsGE61+UaiXI8q/\nfS02yDh39SLc6SGWKOANWLAqBnz4EReHa/M0nIUkPjsdAm6sx9DBNSsXSfraPH4e\n8RFeqMDnzr0D+pr/1aYK+Deg8zr8eiIZNmg40Z2YAEXw4AGAwV8eNUmfAoGAWRFm\n7VhAUaXRxccLBqv1x+pb82AgSdt6uGFIZQsyC9nlZ4qylGBvdZjeaWAgiIUpJXHZ\nANvPNpyj5Pdzv7a+30gs1FZaSTvF31It+BURQ5p00dxZhIeAWuTFL99Yly24hzpl\nDcKela5McXcj3+WFspoeWPm5SXf0I7/sR2cHGQECgYBfq8ZqXxSlTUm8Th5DolAL\nU0CjGzErP5IwsHOOKclNdtdPVdp6QqZbFiGxbhDivQXWwsSP2SAYDN1Wm4ob2+Qv\nOVChifYDTKyr9LwohFTZVVyKSpOOEZjQsrZB4XL+E+G0V7VFRxsNZ4PcxvTEvAC7\nklTKeQNcJQ/d+nYEUXE1jA==\n-----END PRIVATE KEY-----\n",
+      "private_key_id": "",
+      "private_key": "",
       "client_email": "firebase-adminsdk-1avzl@traffic-159e8.iam.gserviceaccount.com",
       "client_id": "112202752645265219203",
       "auth_uri": "https://accounts.google.com/o/oauth2/auth",
@@ -34,10 +34,10 @@ if not firebase_admin._apps:
 
 ref = db.reference('server/')
 #video location
-cap1 = cv2.VideoCapture(r"C:\Users\Monish Meher\Downloads\Video\road.mp4")
+cap1 = cv2.VideoCapture(r"C:\Users\Monish Meher\Desktop\TestFootage\first_half.mp4")
 length1 = int(cap1.get(cv2.CAP_PROP_FRAME_COUNT))
 print( length1 )
-cap2 = cv2.VideoCapture(r"C:\Users\Monish Meher\Downloads\Video\test.mp4")
+cap2 = cv2.VideoCapture(r"C:\Users\Monish Meher\Desktop\TestFootage\third_half.mp4")
 length2 = int(cap2.get(cv2.CAP_PROP_FRAME_COUNT))
 print( length2 )
 
@@ -139,7 +139,7 @@ def compare():
         })
         main()
     elif carInFeed1 == carInFeed2:
-        print("Similar Trafiic")
+        print("Similar Traffic")
 #         current = "B"
 #         firebase.post('/current',current)
         traffic_ref = ref.child('traffic-data')
@@ -155,12 +155,6 @@ def compare():
 main()        
 
     
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
