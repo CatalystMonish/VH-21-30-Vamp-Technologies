@@ -144,7 +144,7 @@
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="0"
-                      android:textColor="@color/text_light"
+                      android:textColor="#616161"
                       android:textSize="40dp"/>
               </androidx.cardview.widget.CardView>
                   <TextView
@@ -179,7 +179,7 @@
                       android:layout_height="wrap_content"
                       android:text="0"
                       android:layout_gravity="center"
-                      android:textColor="@color/text_light"
+                      android:textColor="#616161"
                       android:textSize="40dp"/>
 
                   </androidx.cardview.widget.CardView>
@@ -209,12 +209,13 @@
                   android:layout_height="90dp"
                   android:orientation="vertical">
                   <TextView
+                      android:id="@+id/tv_car3"
                       android:fontFamily="@font/main"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="0"
                       android:layout_gravity="center"
-                      android:textColor="@color/text_light"
+                      android:textColor="#616161"
                       android:textSize="40dp"/>
               </androidx.cardview.widget.CardView>
               <TextView

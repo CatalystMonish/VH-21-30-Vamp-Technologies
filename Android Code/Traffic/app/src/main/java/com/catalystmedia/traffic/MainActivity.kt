@@ -48,11 +48,11 @@ class MainActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
                             iv_best_route.setImageResource(R.drawable.route_1)
                         }
                         else if (data == "B"){
-                            iv_direction.setImageResource(R.drawable.ic_right)
+                            iv_direction.setImageResource(R.drawable.ic_up)
                             iv_best_route.setImageResource(R.drawable.route_2)
                         }
-                        else{
-                            iv_direction.setImageResource(R.drawable.ic_up)
+                        else if (data == "C"){
+                            iv_direction.setImageResource(R.drawable.ic_right)
                             iv_best_route.setImageResource(R.drawable.route_3)
                         }
 
@@ -93,6 +93,25 @@ class MainActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
                             tv_car2.setTextColor(Color.parseColor("#BBBBBB"))
                         }, 2000)
                         tv_car2.setTextColor(Color.parseColor("#00C845"))
+
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO("Not yet implemented")
+                }
+            })
+
+        FirebaseDatabase.getInstance().reference.child("server").child("traffic-data").child("roadData")
+            .child("carsFeed3").addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if(snapshot.exists()){
+                        var data = snapshot.value.toString()
+                        tv_car3.text = data
+                        Handler(Looper.getMainLooper()).postDelayed({
+                            tv_car3.setTextColor(Color.parseColor("#BBBBBB"))
+                        }, 2000)
+                        tv_car3.setTextColor(Color.parseColor("#00C845"))
 
                     }
                 }
