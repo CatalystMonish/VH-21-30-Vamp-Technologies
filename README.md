@@ -8,7 +8,7 @@
 **DESCRIPTION**
 
 ## About Project
-We are developing a tech-based solution to provide real-time traffic updates on traffic congestion and unusual traffic incidents to resolve the conflicting demands of all road and transport users
+We are developing a tech-based solution to provide real-time traffic updates on traffic congestion and unusual traffic incidents to resolve the conflicting demands of all road and transport users.
 
 ## Features
 
