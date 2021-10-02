@@ -8,7 +8,9 @@
 **DESCRIPTION**
 
 ## About Project
-We are developing a tech-based solution to provide real-time traffic updates on traffic congestion and unusual traffic incidents to resolve the conflicting demands of all road and transport users. To solve this problem we have combined the powers of Python with Realtime Database combined with Application to develop a truly real-time solution to the problem of traffic
+We are developing a tech-based solution to provide real-time traffic updates on traffic congestion and unusual traffic incidents to resolve the conflicting demands of all road and transport users. 
+
+To solve this problem we have combined the powers of Python with Realtime Database combined with Application to develop a truly real-time solution to the problem of traffic
 
 ## Python Code Output
 We have used cutting edge image processing tools to give about maximum accuracy and efficiency. Our python code is 100% original as we have deveoped it tailored for this purpose. The code processes the three videoes simultaneously figuring out the route with least traffic and accordingly updates it in real-time database which further relays this to the Route App in a intelligent way
